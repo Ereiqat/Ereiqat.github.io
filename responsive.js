@@ -19,8 +19,8 @@ nxtBtn.addEventListener('click', slideNext);
 //end multi item slider
 
 //contact copy to clipboard
-const myphone = "0785855449";
-const myEmail = "ibr20200491@std.psut.edu.jo";
+const myphone = document.getElementById("phoneNum").innerHTML.toString();
+const myEmail = document.getElementById("email").innerHTML.toString();
 
 var copy1 = document.getElementById('copy1');
 var copy2 = document.getElementById('copy2');

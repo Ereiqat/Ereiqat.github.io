@@ -18,12 +18,15 @@ buttons.forEach(button => {
   })
 })
 //end carousel
+const btnAuto = document.querySelectorAll(".imgCaro>.carousell-button");
 
 autoSlide();
 
+
+
 function autoSlide() {
     const offset = 1
-    const sllides = buttons[0].closest("[data-carousell]")
+    const sllides = btnAuto[0].closest("[data-carousell]")
       .querySelector("[data-sllides]")
 
     const activeSllide = sllides.querySelector("[data-active]")
@@ -38,8 +41,8 @@ function autoSlide() {
 
 
 //contact copy to clipboard
-const myphone = "0785855449";
-const myEmail = "ibr20200491@std.psut.edu.jo";
+const myphone = document.getElementById("phoneNum").innerHTML.toString();
+const myEmail = document.getElementById("email").innerHTML.toString();
 
 var copy1 = document.getElementById('copy1');
 var copy2 = document.getElementById('copy2');

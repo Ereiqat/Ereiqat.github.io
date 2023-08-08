@@ -46,11 +46,7 @@
    cursor: pointer;
 }
 
-.hero {
-   display: block;
-   width: 100%;
-   height: 70vhd;
-}
+
 
 
 .projects {
@@ -106,15 +102,25 @@
 
 }
 
+.hero {
+   display: block;
+   width: 100%;
+   height: fit-content;
+   padding-left: 5PX;
+   padding-right: 5px;
+}
+
 .avatar {
    display: block;
    margin-left: auto;
    margin-right: auto;
    width: fit-content;
    height: 60%;
-   margin-top: 25px;
-   margin-bottom: 35px;
+   margin-top: 30px;
+   margin-bottom: 50px;
 }
+
+
 
 .avatar img {
    width: 170px;
@@ -178,7 +184,7 @@
 
 
 .btn-pre img, .btn-nxt img {
-   width: 25PX;
+   width: 20px;
    height: auto;
    opacity: inherit;
 }
@@ -277,7 +283,7 @@
    height: fit-content;
    padding-top: 20px;
    padding-bottom: 20px;
-   text-align: justify;
+   text-align: center;
    padding-left: 15dvw;
    padding-right: 15dvw;
 }
@@ -286,38 +292,57 @@
    width: fit-content;
    margin-left: auto;
    margin-right: auto;
+   text-align: left;
 }
 
 .about h4, h3, h2, h1 {
    text-align: center;
+   
+}
+
+.about hr {
+   margin-top: 30px;
+   margin-bottom: 30px;
 }
 
 
-
-.about p {
-   text-align: justify;
+.txtCenter {
+   text-align: center;
 }
+
+.about a, .about a:visited {
+   text-decoration: none;
+   color: rgb(0, 156, 218);
+}
+
+.about a:hover,  .about a:visited:hover  {
+   color: rgb(0, 0, 109);
+}
+
 
 .copy {
    float: right;
 }
 
+
 footer {
    border-top: 1px solid rgba(192, 192, 192, 0.555);
-   height: fit-content;
+   height: 300px;
    text-align: center;
    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+   margin-bottom: 0;
 }
 
 footer small{
-   margin-top: 25px;
-   padding-bottom: 25px;
+   margin-top: 20px;
+   padding-bottom: 20px;
    display: block;
 }
+
 .contact, .soc{
-   display: inline-block;
-   margin-left: 150px;
-   margin-right: 150px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
    margin-top: 25px;
    text-align: center;
 }
@@ -325,14 +350,10 @@ footer small{
 .contact p {
    text-align: center;
 }
-/*
-.d-block {
-   width: 760px;
-   height: 480px;
-}
-*/
+
+
 .caro {
-   width: 800px;
+   width: 95%;
    height: auto;
    display: block;
    margin-left: auto;
@@ -341,8 +362,6 @@ footer small{
    padding-top: 25px;
    aspect-ratio: 16/9;
 }
-
-
 
 .carousel-item img{
    width: 800px;
@@ -358,10 +377,15 @@ footer small{
    margin:0;
  }
  
+
+
  .carousell {
    width: 100%;
    height: 100%;
    position: relative;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
  }
  
  .carousell > ul {
@@ -386,29 +410,24 @@ footer small{
    object-position: center;
    aspect-ratio: 16/9;
  }
+
+ .sllide > video {
+   display: block;
+   width: 100%;
+   height: 100%;
+   /*object-fit: cover;*/
+   object-position: center;
+   aspect-ratio: 16/9;
+ }
+
  
+
  .sllide[data-active] {
    opacity: 1;
    z-index: 1;
    transition-delay: 0ms;
  }
- /*
- .carousell-button {
-   position: absolute;
-   z-index: 3;
-   background: none;
-   border: none;
-   font-size: 2rem;
-   top: 50%;
-   transform: translateY(-50%);
-   color: rgba(255, 255, 255, .5);
-   cursor: pointer;
-   border-radius: .25rem;
-   padding: 0 .5rem;
-   background-color: rgba(0, 0, 0, .1);
-   height: 75px;
- }*/
- 
+
  .carousell-button:hover,
  .carousell-button:focus {
    color: white;
@@ -419,12 +438,12 @@ footer small{
    outline: 1px solid black;
  }
  
- .carousell-button {
+    .carousell-button {
       position: absolute;
       z-index: 3;
       background: none;
       border: none;
-      font-size: 2rem;
+      font-size: 25px;
       /*top: 50%;
       transform: translateY(-50%);*/
       color: rgba(255, 255, 255, .5);
@@ -433,6 +452,7 @@ footer small{
       padding: 0 .5rem;
       background-color: rgba(0, 0, 0, .1);
       height: 100%;
+      width: 40px;
       
     }
 
@@ -454,6 +474,12 @@ footer small{
     .carousell-button:focus > * {
    color: rgba(0, 0, 0, 0.8);
     }
+    
+    .vidCaro .carousell-button {
+      top: 50%;
+      transform: translateY(-50%);
+      height: 60px;
+   }
 
     .topScroll {
       position: fixed;
@@ -476,94 +502,63 @@ footer small{
     }
 /*******************************************/
 @media only screen
-and (max-device-width: 850px){
-   .hero {
-      display: block;
-      width: 100%;
-      height: fit-content;
-      padding-left: 5PX;
-      padding-right: 5px;
-   }
+and (min-device-width: 850px){
+
+   /*.hero {
+
+      height: 60dvh;
+   }*/
 
    .avatar {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: fit-content;
-      height: 60%;
-      margin-top: 30px;
-      margin-bottom: 50px;
+      margin-top: 35px;
+      margin-bottom: 35px;
    }
 
+
    .btn-pre img, .btn-nxt img {
-      width: 20px;
+      width: 25PX;
    }
 
    footer {
-      height: 300px;
+       height: fit-content;
    }
-   
+
    footer small{
-      margin-top: 20px;
-      margin-bottom: 20px;
-      display: block;
+       margin-top: 25px;
+       padding-bottom: 25px;
    }
+
    .contact, .soc{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 25px;
-      text-align: center;
-   }
-   
-   .contact p {
-      text-align: center;
+       display: inline-block;
+       margin-left: 150px;
+       margin-right: 150px;
+       margin-top: 25px;
+       text-align: center;
    }
 
    .caro {
-      width: 95%;
-      height: auto;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      padding-top: 25px;
-      aspect-ratio: 16/9;
+       width: 800px;
    }
-   .sllide > img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      /*object-fit: cover;*/
-      object-position: center;
-      aspect-ratio: 16/9;
-    }
+/*******************************/
 
-    .carousell {
-      width: 100%;
-      height: 100%;
-      position: relative;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+.carousell {
+   margin-left: none;
+   margin-right: none;
+ }
 
-    .carousell-button {
-      position: absolute;
-      z-index: 3;
-      background: none;
-      border: none;
-      font-size: 25px;
-      /*top: 50%;
-      transform: translateY(-50%);*/
-      color: rgba(255, 255, 255, .5);
-      cursor: pointer;
-      padding: 0 .5rem;
-      background-color: rgba(0, 0, 0, .1);
-      height: 100%;
-      width: 40px;
-      
-    }
+ .carousell-button {
+
+   font-size: 2rem;
+   /*top: 50%;
+   transform: translateY(-50%);*/
+
+   width:auto;
+   
+ }
+
+ .about {
+   text-align: justify;
+}
 
     
 }
