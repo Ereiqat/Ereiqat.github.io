@@ -8,6 +8,7 @@ buttons.forEach(button => {
       .closest("[data-carousell]")
       .querySelector("[data-sllides]")
 
+
     const activeSllide = sllides.querySelector("[data-active]")
     let newIndex = [...sllides.children].indexOf(activeSllide) + offset
     if (newIndex < 0) newIndex = sllides.children.length - 1
@@ -17,7 +18,7 @@ buttons.forEach(button => {
     delete activeSllide.dataset.active
   })
 })
-//end carousel
+
 const btnAuto = document.querySelectorAll(".imgCaro>.carousell-button");
 
 autoSlide();
@@ -39,6 +40,30 @@ function autoSlide() {
     setTimeout(autoSlide, 5000);
   }
 
+const btnVid = document.querySelectorAll(".vidCaro>.carousell-button");
+
+btnVid.forEach(button => {
+  button.addEventListener("click", () => {
+    const sllides = button.closest("[data-carousell]")
+      .querySelector("[data-sllides]")
+
+    const offset = button.dataset.carousellButton === "next" ? -1 : 1
+
+    const activeSllide = sllides.querySelector("[data-active]")
+    let index = [...sllides.children].indexOf(activeSllide)
+
+    let vids = document.querySelectorAll(".vidCaro video")
+    if((index+offset)<0||(index+offset)>sllides.children.length - 1){
+    vids[0].pause()
+    vids[sllides.children.length - 1].pause()
+    }
+    else{
+    vids[index+offset].pause()
+    }
+    vids[index].play()
+  })
+})
+//end carousel
 
 //contact copy to clipboard
 const myphone = document.getElementById("phoneNum").innerHTML.toString();
