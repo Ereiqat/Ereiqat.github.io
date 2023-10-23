@@ -607,9 +607,5 @@ and (min-device-width: 850px){
       font-size: 16px; /* Adjusted font size */
    }
 
-   /* Ensuring responsive images */
-   .proj-card img {
-      max-width: 100%;
-      height: auto;
-   }
+   
 }
