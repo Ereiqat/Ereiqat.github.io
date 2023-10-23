@@ -585,27 +585,3 @@ and (min-device-width: 850px){
 
     
 }
-
-@media only screen and (max-width: 850px) {
-   .topnav {
-      font-size: 14px; /* Adjusted font size */
-   }
-
-   .resume, .proj-card p {
-      font-size: 14px; /* Adjusted font size */
-   }
-
-   .intro {
-      font-size: 16px; /* Adjusted font size */
-   }
-
-   .about, .about h4, .about h3, .about h2, .about h1 {
-      font-size: 14px; /* Adjusted font size */
-   }
-
-   .carousell-button > *, .btn-pre, .btn-nxt {
-      font-size: 16px; /* Adjusted font size */
-   }
-
-   
-}
