@@ -390,7 +390,7 @@ footer small{
    transition: var(--transition_timing_short) opacity ease-in-out;
  }
  
- .sllide > img {
+ .sllide > * {
    display: block;
    width: 100%;
    height: 100%;
@@ -399,16 +399,6 @@ footer small{
    aspect-ratio: 16/9;
  }
 
- .sllide > video {
-   display: block;
-   width: 100%;
-   height: 100%;
-   /*object-fit: cover;*/
-   object-position: center;
-   aspect-ratio: 16/9;
- }
-
- 
 
  .sllide[data-active] {
    opacity: 1;
