@@ -1359,6 +1359,9 @@ textarea.form-control, textarea.form-control:focus {
 .skills-second-style .skill-container.skill-9 .skill-percentage {
   width: 90%;
 }
+.skills-second-style .skill-container.skill-10 .skill-percentage {
+  width: 70%;
+}
 
 /* --- End of Skills Values --- */
 
@@ -1387,7 +1390,7 @@ textarea.form-control, textarea.form-control:focus {
   list-style: none;
 }
 
-.knowledges li {;
+.knowledges li {
   display: inline-block;
   background-color: #fca072;
   border-radius: 3px;
