@@ -12,18 +12,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://ereiqat.me/blog-post-1.html</loc>
-        <changefreq>daily</changefreq>
-        <priority>0.8   </priority>
-    </url>
  <!-- Project Sumo 2023 Page -->
-    
-    <url>
-        <loc>https://ereiqat.me/projectSumo2023.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
     <url>
         <loc>https://ereiqat.me/blog-post-2.html</loc>
         <changefreq>daily</changefreq>
@@ -31,21 +20,11 @@
     </url>
     <!-- Fire 2022 Page -->
     <url>
-        <loc>https://ereiqat.me/fire2022.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://ereiqat.me/blog-post-3.html</loc>
         <changefreq>daily</changefreq>
         <priority>0.8   </priority>
     </url>
     <!-- Project Kimofall Page -->
-    <url>
-        <loc>https://ereiqat.me/projectkimofall.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
     <url>
         <loc>https://ereiqat.me/blog-post-4.html</loc>
         <changefreq>daily</changefreq>
