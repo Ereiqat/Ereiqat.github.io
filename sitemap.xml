@@ -6,6 +6,12 @@
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
+    <!-- 2024 Sumo Page -->
+    <url>
+    <loc>https://ereiqat.me/blog-post-6.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    </url>
     <!-- Chiphra Page -->
     <url>
     <loc>https://ereiqat.me/blog-post-1.html</loc>
